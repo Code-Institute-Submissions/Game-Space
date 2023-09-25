@@ -165,7 +165,7 @@ Features used:
 ## **Potential-Features**
 * Due to the project deadlines being in a very tight timeframe the project had to be scaled down to a more simpler version of the geography quiz but these are the features that I would like to potentially add or implement in the near future:
     * An interactive version with sounds and unique animations.
-    * Potentially adding a leaderboard system/table to challenge and rival other users.
+* Potentially adding a leaderboard system/table to challenge and rival other users.
     * A narration voice over for all the questions and answers for users with disablity issues.
     * A mixture of sound, images and text based questions and answers.
     * A shuffler for answer as well.
