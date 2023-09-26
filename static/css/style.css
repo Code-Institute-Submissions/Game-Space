@@ -43,14 +43,15 @@
 
 header {
     margin: 0;
-    font-family: 'Courgette', cursive;
+    font-family: 'Orbitron', sans-serif;
 }
 
 body {
     display: grid;
     height: 100%;
     width: 100%;
-    font-family: 'Courgette', cursive;
+    font-family: 'Orbitron',
+        sans-serif;
     place-items: center;
     background: #ffffff;
     color: rgb(var(--color-six));
@@ -58,7 +59,8 @@ body {
 
 /* heading styling*/
 h1 {
-    font-family: 'Rye', cursive;
+    font-family: 'VT323',
+        monospace;
     font-weight: bolder;
     color: rgb(var(--color-six));
     font-size: 2em;
@@ -80,12 +82,14 @@ h1 {
 
 h2 {
     margin: 0;
-    font-family: 'Crimson Text', serif;
+    font-family: 'VT323',
+        monospace;
 }
 
 h5,
 h6 {
-    font-family: 'Courgette', cursive;
+    font-family: 'Orbitron',
+        sans-serif;
     text-align: center;
     font-size: 1.25em;
 }
@@ -131,7 +135,7 @@ p {
 }
 
 .background-image {
-    background-image: url('../static/img/barber-tools.jpg');
+    background-image: url('../img/vintage-games.jpg');
     position: relative;
     width: 100%;
     color: #fff;
