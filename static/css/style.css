@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Crimson+Text&family=Rye&display=swap');
+
+/*--------------------------------------------Vintage Colors Classes*/
+:root {
+    /* venetian red */
+    --color-one: 178, 52, 42;
+    /* tan */
+    --color-two: 212, 172, 148;
+    /* persian plum */
+    --color-three: 107, 31, 25;
+    /* rhythm */
+    --color-four: 112, 116, 156;
+    /* desert sand */
+    --color-five: 219, 203, 179;
+    /* onyx */
+    --color-six: 58, 52, 57;
+}
+
+
+/*--------------------------------------------Vintage Colors Classes*/
+.venetian-red {
+    color: rgb(var(--color-one))
+}
+
+.tan {
+    color: rgb(var(--color-two))
+}
+
+.persian-plum {
+    color: rgb(var(--color-three))
+}
+
+.rhythm {
+    color: rgb(var(--color-four))
+}
+
+.desert-sand {
+    color: rgb(var(--color-five))
+}
+
+.onyx {
+    color: rgb(var(--color-six))
+}
+
+
+header {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: 'Courgette', cursive;
+    place-items: center;
+    background: #ffffff;
+    color: rgb(var(--color-six));
+}
+
+/* heading styling*/
+h1 {
+    font-family: 'Rye', cursive;
+    font-weight: bolder;
+    color: rgb(var(--color-six));
+    font-size: 2em;
+}
+
+.animated {
+    animation: animation 3s ease;
+}
+
+@keyframes animation {
+    from {
+        letter-spacing: 15px;
+    }
+
+    to {
+        letter-spacing: 0;
+    }
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+}
+
+h5,
+h6 {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+p {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.jumbotron {
+    color: #ffff;
+    /* White text */
+}
+
+.card {
+    background-color: rgba(var(--color-six), 0.85);
+    color: rgb(var(--color-four));
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-body {
+    color: var(--color-two);
+    /* Light beige text */
+    width: 400px;
+    height: 350px;
+}
+
+.card-title {
+    text-align: justify;
+}
+
+.card-img {
+    width: 200px;
+    height: 150px;
+    padding: 50px;
+}
+
+/* Add animations */
+.card:hover {
+    transform: scale(1, 1.1);
+    /* Slightly zoom in on hover */
+    background-color: rgb(var(--color-two), 0.45)
+}
+
+.background-image {
+    background-image: url('../static/img/barber-tools.jpg');
+    position: relative;
+    width: 100%;
+    color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-image {
+    background-image: url('../images/hero-image.png');
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+/*-------------------------------------------Nav Bar Styling*/
+
+/*Nav Menu*/
+#menu {
+    overflow: hidden;
+    letter-spacing: 1.5px;
+    position: relative;
+    font-size: 1em;
+    line-height: 30px;
+    font-family: 'Rye', cursive;
+    text-align: center;
+}
+
+/*Nav menu link colors*/
+#menu a {
+    float: right;
+    color: rgb(var(--color-two));
+    position: relative;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+/*Nav menu hovering*/
+#menu a:hover {
+    text-decoration: none;
+    color: rgb(var(--color-one));
+}
+
+/*-------------------------------------------Social media styling*/
+a {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: rgb(var(--color-five));
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+ul li {
+    padding: 1rem;
+}
+
+/* map styling */
+#map {
+    width: 100%;
+    max-width: 100%;
+    /* Ensure it doesn't exceed the screen width */
+    text-align: center;
+}
+
+.fab {
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* transition for social icon hover animation */
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-github {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* social media icons hover color */
+.fa-facebook:hover,
+.fa-facebook:focus {
+    color: #3b5998;
+    transform: scale(1.1);
+}
+
+.fa-twitter:hover,
+.fa-twitter:focus {
+    color: #1da1f2;
+    transform: scale(1.1);
+}
+
+.fa-instagram:hover,
+.fa-instagram:focus {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+}
+
+.fa-github:hover,
+.fa-github:focus {
+    color: #808080;
+    transform: scale(1.1);
+}
+
+
+/* For device screen resolutions with less than 400px it will remove curved footer */
+/*@media only screen and (max-width: 800px)*/
