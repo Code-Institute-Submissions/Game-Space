@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Articles List</h1>
+  <div class="row">
+    {% for article in articles %}
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2>
+            <a
+              href="{% url 'articles:detail' slug=article.slug %}"
+              class="text-decoration-none"
+              >{{ article.title }}</a
+            >
+          </h2>
+          <p>{{ article.snippet }}</p>
+          <p class="text-muted">{{ article.date }}</p>
+          <p class="text-muted author">
+            Added by {{ article.author.username }}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
