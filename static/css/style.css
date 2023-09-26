@@ -1,47 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Crimson+Text&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap');
 
-/*--------------------------------------------Vintage Colors Classes*/
+/*--------------------------------------------Retro Cyberpunk Colors*/
 :root {
-    /* venetian red */
-    --color-one: 178, 52, 42;
-    /* tan */
-    --color-two: 212, 172, 148;
-    /* persian plum */
-    --color-three: 107, 31, 25;
-    /* rhythm */
-    --color-four: 112, 116, 156;
-    /* desert sand */
-    --color-five: 219, 203, 179;
-    /* onyx */
-    --color-six: 58, 52, 57;
+    /* Neon blue */
+    --color-one: 0, 191, 255;
+    /* Neon pink */
+    --color-two: 255, 105, 180;
+    /* Neon purple */
+    --color-three: 148, 0, 211;
+    /* Neon green */
+    --color-four: 0, 255, 0;
+    /* Neon yellow */
+    --color-five: 255, 255, 0;
+    /* Dark gray */
+    --color-six: 40, 40, 40;
 }
 
-
-/*--------------------------------------------Vintage Colors Classes*/
-.venetian-red {
-    color: rgb(var(--color-one))
+/*--------------------------------------------Retro Cyberpunk Colors Classes*/
+.neon-blue {
+    color: rgb(var(--color-one));
 }
 
-.tan {
-    color: rgb(var(--color-two))
+.neon-pink {
+    color: rgb(var(--color-two));
 }
 
-.persian-plum {
-    color: rgb(var(--color-three))
+.neon-purple {
+    color: rgb(var(--color-three));
 }
 
-.rhythm {
-    color: rgb(var(--color-four))
+.neon-green {
+    color: rgb(var(--color-four));
 }
 
-.desert-sand {
-    color: rgb(var(--color-five))
+.neon-yellow {
+    color: rgb(var(--color-five));
 }
 
-.onyx {
-    color: rgb(var(--color-six))
+.dark-gray {
+    color: rgb(var(--color-six));
 }
-
 
 header {
     margin: 0;
