@@ -145,17 +145,6 @@ p {
     background-position: center;
 }
 
-.hero-image {
-    background-image: url('../images/hero-image.png');
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-}
-
 /*-------------------------------------------Nav Bar Styling*/
 
 /*Nav Menu*/
@@ -165,7 +154,8 @@ p {
     position: relative;
     font-size: 1em;
     line-height: 30px;
-    font-family: 'Rye', cursive;
+    font-family: 'Orbitron',
+        sans-serif;
     text-align: center;
 }
 
