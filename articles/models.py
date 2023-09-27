@@ -3,8 +3,6 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from cloudinary.models import CloudinaryField
 
-STATUS = ((0, "Draft"), (1, "Published"))
-
 
 # Article attributes
 class Article(models.Model):
@@ -12,7 +10,6 @@ class Article(models.Model):
         (0, "Draft"),
         (1, "Published")
     )
-
     title = models.CharField(max_length=200, unique=True)
     slug = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(
