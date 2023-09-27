@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="mb-4">Log In To Your Space</h1>
+          <form
+            class="site-form"
+            action="{% url 'accounts:login' %}"
+            method="post"
+          >
+            {% csrf_token %} {{ form }} {% if request.GET.next %}
+            <input type="hidden" name="next" value="{{ request.GET.next }}" />
+            {% endif %}
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <p class="mt-3">
+            Don't have an account?
+            <a href="{% url 'accounts:signup' %}" class="btn btn-link"
+              >Sign Up Today</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
