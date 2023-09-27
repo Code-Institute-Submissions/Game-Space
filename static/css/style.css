@@ -199,12 +199,6 @@ ul li {
 }
 
 /* map styling */
-#map {
-    width: 100%;
-    max-width: 100%;
-    /* Ensure it doesn't exceed the screen width */
-    text-align: center;
-}
 
 .fab {
     font-size: 3rem;
@@ -213,36 +207,12 @@ ul li {
 }
 
 /* transition for social icon hover animation */
-.fa-facebook,
-.fa-twitter,
-.fa-instagram,
 .fa-github {
     transition: 0.3s;
     cursor: pointer;
 }
 
 /* social media icons hover color */
-.fa-facebook:hover,
-.fa-facebook:focus {
-    color: #3b5998;
-    transform: scale(1.1);
-}
-
-.fa-twitter:hover,
-.fa-twitter:focus {
-    color: #1da1f2;
-    transform: scale(1.1);
-}
-
-.fa-instagram:hover,
-.fa-instagram:focus {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.1);
-}
-
 .fa-github:hover,
 .fa-github:focus {
     color: #808080;
