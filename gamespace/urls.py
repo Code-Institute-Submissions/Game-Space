@@ -19,7 +19,6 @@ from articles import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
     path('summernote/', include('django_summernote.urls')),
     path('articles/', include('articles.urls')),
 ]
