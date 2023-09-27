@@ -6,9 +6,10 @@ from cloudinary.models import CloudinaryField
 
 # Article attributes
 class Article(models.Model):
+    
     STATUS_CHOICES = (
-        (0, "Draft"),
-        (1, "Published")
+        ('draft', 'Draft'),
+        ('published', 'Published'),
     )
     title = models.CharField(max_length=200, unique=True)
     slug = models.CharField(max_length=200, unique=True)
@@ -19,9 +20,10 @@ class Article(models.Model):
     excerpt = models.TextField(blank=True)
     content = models.TextField()
     created_on = models.DateTimeField(default=timezone.now)
-    status = models.IntegerField(choices=STATUS_CHOICES, default=0)
     likes = models.ManyToManyField(
         User, related_name='articlepost_like', blank=True)
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    
 
     class Meta:
         ordering = ["-created_on"]
@@ -35,8 +37,7 @@ class Article(models.Model):
 
 # Comment attributes
 class Comment(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE,
-                                related_name="comments")
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()

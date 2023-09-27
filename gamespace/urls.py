@@ -19,6 +19,7 @@ from articles import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include("articles.urls"), name="article-urls"),
     path('summernote/', include('django_summernote.urls')),
-    path('articles/', include('articles.urls')),
+    path('articles/', include('articles.urls')), 
 ]
