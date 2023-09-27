@@ -6,7 +6,6 @@ from cloudinary.models import CloudinaryField
 
 # Article attributes
 class Article(models.Model):
-    
     STATUS_CHOICES = (
         ('draft', 'Draft'),
         ('published', 'Published'),
@@ -23,7 +22,6 @@ class Article(models.Model):
     likes = models.ManyToManyField(
         User, related_name='articlepost_like', blank=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
-    
 
     class Meta:
         ordering = ["-created_on"]
