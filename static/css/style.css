@@ -80,7 +80,7 @@ h1 {
     }
 }
 
-h2 {
+h3 {
     margin: 0;
     font-family: 'VT323',
         monospace;
@@ -97,6 +97,7 @@ h6 {
 p {
     font-size: 1.25em;
     text-align: center;
+    font-family: 'Orbitron',
 }
 
 .jumbotron {
@@ -176,6 +177,13 @@ p {
     color: rgb(var(--color-one));
 }
 
+.navbar-style {
+    color: rgb(var(--color-two));
+    font-size: 1.25em;
+    text-decoration: none;
+    font-family: 'Orbitron',
+}
+
 /*-------------------------------------------Social media styling*/
 a {
     text-align: center;
@@ -184,19 +192,6 @@ a {
     color: rgb(var(--color-one));
 }
 
-ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 1rem;
-    list-style-type: none;
-    font-size: 1rem;
-}
-
-ul li {
-    padding: 1rem;
-}
 
 /* map styling */
 
