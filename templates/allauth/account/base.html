@@ -1,4 +1,3 @@
-{% extends "base.html" %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,11 +21,11 @@
       <strong>Menu:</strong>
       <ul>
         {% if user.is_authenticated %}
-        <li><a href="{% url 'account_email' %}">Change Email</a></li>
-        <li><a href="{% url 'account_logout' %}">Log Out</a></li>
+        <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+        <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
         {% else %}
-        <li><a href="{% url 'account_login' %}">Log In</a></li>
-        <li><a href="{% url 'account_signup' %}">Register</a></li>
+        <li><a href="{% url 'account_login' %}">Sign In</a></li>
+        <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
         {% endif %}
       </ul>
     </div>

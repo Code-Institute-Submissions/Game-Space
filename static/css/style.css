@@ -184,6 +184,11 @@ p {
     font-family: 'Orbitron',
 }
 
+button{
+    font-family: 'Orbitron',
+    color:rgb(var(--color-five))
+}
+
 /*-------------------------------------------Social media styling*/
 a {
     text-align: center;
