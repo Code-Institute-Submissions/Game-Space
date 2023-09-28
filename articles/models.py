@@ -13,15 +13,15 @@ class Article(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.CharField(max_length=200, unique=True)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="article_posts", related_query_name="article_post"
-    )
+        User, on_delete=models.CASCADE, related_name="article_posts")
     image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
     content = models.TextField()
     created_on = models.DateTimeField(default=timezone.now)
     likes = models.ManyToManyField(
         User, related_name='articlepost_like', blank=True)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    status = models.CharField(
+        max_length=10, choices=STATUS_CHOICES, default='draft')
 
     class Meta:
         ordering = ["-created_on"]
@@ -35,7 +35,8 @@ class Article(models.Model):
 
 # Comment attributes
 class Comment(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="comments")
+    article = models.ForeignKey(
+        Article, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
