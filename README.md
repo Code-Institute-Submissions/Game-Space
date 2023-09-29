@@ -110,7 +110,7 @@ Below is a list of things from different perspectives of different users
 * All icons that were used in the footer is sourced from font awesome.
 * A personal copyright has been added in-case of plagerism.
 * A personal link to my GitHub page which users can track my coding journey.
-![Footer-Page](doc/screenshots/footer.png)
+![Footer-Page](static/img/footer-page.png)
 
 ## **Typesetting**
  Throughout the fourth project milestone only this fonts that was used:
@@ -133,12 +133,34 @@ Full details of the testing phase can be found here: [TESTING.md](TESTING.md)
 ## **Deployment**
 The project has been deployed with the following steps: -
 
-1. Within the project's [repository](https://github.com/leebri101/Geographically-Challenged), you select the **Settings** tab.
+1. Within the project's [repository](https://github.com/leebri101/Game-Space), you select the **Settings** tab.
 2. Then select the **Pages** menu tab on the left side.
 3. Under **Source** then, select the **Main** branch from the drop-down menu and click **Save**.
 4. A message will then pop up that the project has been successfully deployed with a live link.
 
 You can visit the live link via this URL - [Game-Space](https://leebri101.github.io/Game-Space/)
+
+### **Heroku**
+### **Basic Setup:**
+* Users must first log into Heroku (creating an account if needed).
+* Then click the "New" button from the dashboard, on the top right hand corner.
+* Then choose "Create a new app".
+* Next Enter a unique name for you application, then select the region and click "Create app".
+### **Technical Setup:**
+* Then from your project page, click on the "Settings" tab scroll down to the area which says "Config Vars".
+* YOU MUST DO THESE STEPS CAREFULLY TO ENSURE IT WORKS PROPERLY:
+    * Enter "PORT" in the "KEY" input field and then enter "8000" within the "VALUE" input field.
+    * Click the "ADD" button to add the "Convig Vars".
+    * Within the same page, scroll to the buildpacks sections and click "ADD BUILDPACK".
+    * Add the "Python" and "node.js" buildpack, and to ensure that the python pack is above the node.js pack if not you can slide them into teh stated order.
+### ***Deployment of Heroku:***
+* Go at the tabbbed section on the top of the page and select the "DEPLOY" tab.
+* Select GitHub deployment method.
+* Search for your respository namne, (keep in mind that it must be the exact same as how you first named the repository) then click the "CONNECT" button to link the repository.
+* At the bottom of the page, select deployment type of either "Automatic" or "Manual Deployment".
+* If you have chosen Automatic Deployment then it will re-deploy the project to heroku each time something is pushed onto GitHub.
+* Then it will display a message that your app is fully deployed and you will have a link to preview and test it. 
+
 ***
 
 ## **Credits**
