@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-leebri101-game-space-bvmch14czu.us2.codeanyapp.com']
+ALLOWED_HOSTS = ["game-space.herokuapp.com", "localhost"]
+
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
